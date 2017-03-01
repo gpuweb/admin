@@ -33,11 +33,11 @@
     </h1>
     <p>
       This Charter is work in progress. To submit feedback,
-      please use <a href="https://github.com/gpuweb/admin/issues">{GPU for the Web Github}</a> Issues
+      please use <a href="https://github.com/gpuweb/admin/issues">GPU for the Web Github</a> Issues
       where this charter is being developed.
     </p>
     <ul>
-      <li>This Charter: 2017-02-09
+      <li>This Charter: 2017-03-01
       </li>
       <li>Start Date: TODO
       </li>
@@ -48,43 +48,58 @@
       Goals
     </h2>
     <p>
-      The mission of the GPU for the Web Community Group is to provide an interface between the Web Platform and modern 3D
-      graphics and computation capabilities present on native system platforms.
+      The mission of the <a href="https://www.w3.org/community/gpu/">GPU for
+      the Web Community Group</a> is to provide an interface between the Web
+      Platform and modern 3D graphics and computation capabilities present on
+      native system platforms.
     </p>
-    <p>The current practice in accelerated graphics for the Web Platform is to use WebGL. This Community
-        Group aims to produce a more advanced technology with the following features:</p>
-      <ul>
+    <p>
+        The current practice in accelerated graphics for the Web Platform is to
+        use WebGL (as of early 2017). This Community Group aims to produce a
+        more advanced technology with the following features:
+    </p>
+    <ul>
         <li>An API that maps nicely to modern Web platform design patterns;</li>
         <li>A lower-level API that allows greater performance in applications;</li>
         <li>An API that exposes the GPU computation functionality provided by more
-            modern APIs and available on many devices;</li>
+            modern APIs and available on many devices;
+        </li>
         <li>A technology that can be reasonably implemented on all platforms
-            that have a modern, low-level graphics API;</li>
+            that have a modern, low-level graphics API;
+        </li>
         <li>An API designed to provide a efficient bindings for both JavaScript and
             <a href="https://github.com/WebAssembly">WebAssembly</a>, possibly
             requiring separate interfaces for each.
         </li>
-       </ul>
+    </ul>
 
-     <p>If successful, the output from this Community Group will establish a new
-      programming layer for the Web Platform that is more modern, more efficient, more functional,
-      better integrated with other aspects of the Web Platform, and designed to be implemented
-      on a wide variety of modern graphics platform or, in a worst case scenario, in a software fallback.
-      We expect most participants of this Community Group to commit to a
-      <a href="https://www.w3.org/community/about/agreements/final/">
-        Final Specification Agreement</a>.
+    <p>
+        If successful, the output from this Community Group will establish a
+        new programming layer for the Web Platform that is more modern, more
+        efficient, more functional, better integrated with other aspects of
+        the Web Platform, and designed to be implemented on a wide variety of
+        modern graphics platform or, in a worst case scenario, in a software
+        fallback. We expect most participants of this Community Group to
+        commit to a <a
+        href="https://www.w3.org/community/about/agreements/final/"> Final
+        Specification Agreement</a>.
+    </p>
 
     <h2 id="scope-of-work">
       Scope of Work
     </h2>
-    <p>This Community Group will recommend a Web programming interface for graphics and computation that:</p>
 
-  <ol>
-    <li>enables rendering of modern graphics to both onscreen and offscreen drawing surfaces</li>
-    <li>enables computation tasks to be performed, and the results of such tasks to be retrieved</li>
-    <li>defines a Shading Language that describes the graphics and computation tasks in a format
+    <p>
+        This Community Group will recommend a Web programming interface for
+        graphics and computation that:
+    </p>
+
+    <ol>
+        <li>enables rendering of modern graphics to both onscreen and offscreen drawing surfaces</li>
+        <li>enables computation tasks to be performed, and the results of such tasks to be retrieved</li>
+        <li>defines a Shading Language that describes the graphics and computation tasks in a format
         that can be translated or compiled into platform-specific instructions</li>
-  </ol>
+    </ol>
 
     <p>
         The API will not be restricted to any particular platform technology. Instead, it will
