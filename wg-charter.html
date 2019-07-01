@@ -138,7 +138,7 @@
         <ol>
             <li>enables rendering of modern graphics to both onscreen and offscreen drawing surfaces</li>
             <li>enables computation tasks to be performed, and the results of such tasks to be retrieved</li>
-            <li>defines a Shading Language that describes the graphics and computation tasks in a format
+            <li>This group may also recommend a companion Shading Language that describes the graphics and computation tasks in a format
             that can be translated or compiled into platform-specific instructions</li>
         </ol>
 
@@ -161,6 +161,16 @@
           <p>Each specification should contain a section detailing any <a href='https://www.w3.org/TR/security-privacy-questionnaire/'>known security</a>, fingerprinting, and privacy implications, and suggested <a href='https://w3c.github.io/perf-security-privacy/'>mitigation strategies</a> for implementers, Web authors, and end users. The group should not publish a specification if acceptable mitigation strategies cannot be found.</p>
           <p>Normative specification changes are generally expected to have a corresponding set of tests, either in the form of new tests or modifications to existing tests, or must include the rationale for why test updates are not required for the proposed update.</p>
         </div>
+
+        <h2>Out of Scope</h2>
+        <p>
+            The scope of work is restricted to the development of a programming
+            interface between the Web Platform and modern 3D graphics and
+            computation capabilities present on native system platforms. The work
+            will not define hardware features or algorithms, and the interface it
+            defines is not intended to be directly exposed by a GPU driver.
+        </p>
+
       </section>
 
 
@@ -172,7 +182,7 @@
 
         <div id="normative">
           <h3>
-            Normative Specifications
+            Normative
           </h3>
           <dl>
           <dt>WebGPU API</dt>
@@ -184,13 +194,26 @@
               <p class="milestone"><b>Recommendation expected completion:</b> Q2 2020</p>
           </dd>
 
-          <dt>WebGPU Shading Language (WHLSL)</dt>
+          <dt>WebGPU Test Suite</dt>
+
+          <dd>
+              A conformance test suite for the WebGPU API.
+              <p class="milestone"><b>Expected delivery:</b> Q2 2020</p>
+          </dd>
+
+          </dl>
+
+          <h3>
+            Optional Specifications
+          </h3>
+          <dl>
+          <dt>WebGPU Shading Language</dt>
 
           <dd>
               A Shading Language specification that defines the programmable
               interface to the GPU for the Web graphics and computation
-              pipeline.
-              <p class="milestone"><b>Recommendation expected completion:</b> Q2 2020</p>
+              pipeline. Alternatively, the Working Group may recommend
+              an existing Shading Language.
           </dd>
           </dl>
         </div>
@@ -206,7 +229,6 @@
             </p>
         </div>
       </section>
-
 
 
       <section id="coordination">
