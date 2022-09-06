@@ -9,10 +9,14 @@
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/Guide/pubrules-style.css" />
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css" />
     <style type="text/css">
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
       ul#navbar {
         font-size: small;
       }
-
 
       dt.spec {
         font-weight: bold;
@@ -36,13 +40,12 @@
       }
 
       .todo {
-        color: red;
+        color: #900;
       }
 
       footer {
         font-size: small;
       }
-
     </style>
   </head>
   <body>
@@ -88,7 +91,7 @@
               Start date
             </th>
             <td>
-              20 August 2020
+              <i class="todo">when approved</i>
             </td>
           </tr>
           <tr id="Duration">
@@ -96,7 +99,7 @@
               End date
             </th>
             <td>
-              31 August 2022
+              30 November 2024
             </td>
           </tr>
 
@@ -190,21 +193,29 @@
           Deliverables
         </h2>
 
+        <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/gpu/publications">group publication status page</a>.</p>
+
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+
         <div id="normative">
           <h3>
             Normative Specifications
           </h3>
           <dl>
-          <dt>WebGPU API</dt>
+          <dt><a href="https://www.w3.org/TR/webgpu/">WebGPU API</a></dt>
 
           <dd>
               An API for performing operations, such as rendering and
               computation, on a Graphics Processing Unit (GPU).
-              <p class="draft-status"><b>Draft state:</b> <a href="https://gpuweb.github.io/gpuweb/">Adopted from the GPU for the Web Community Group</a></p>
-              <p class="milestone"><b>Recommendation expected completion:</b> Q1 2022</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2022/WD-webgpu-20220831/">31 August 2022</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2021/WD-webgpu-20210518/">WebGPU 18 May 2021</a>;
+                <br/>associated <a href="https://www.w3.org/mid/cfe-8036-f5ffade17337af94e77d0c1e588bbe63549638fb@w3.org">Call for Exclusion</a> on 2021-05-18 ended on 2021-10-15;
+                <br/>produced under Working Group charter: <a href="https://www.w3.org/2020/12/gpu-wg-charter.html">https://www.w3.org/2020/12/gpu-wg-charter.html</a></p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2024</p>
           </dd>
 
-          <dt>WebGPU Shading Language</dt>
+          <dt><a href="https://www.w3.org/TR/WGSL/">WebGPU Shading Language</a></dt>
 
           <dd>
               A Shading Language specification that defines the programmable
@@ -212,8 +223,12 @@
               pipeline, convertable to Khronos' SPIR-V language and composed
               of constructs defined as normative references to their SPIR-V
               counterparts.
-              <p class="draft-status"><b>Draft state:</b> <a href="https://gpuweb.github.io/gpuweb/wgsl.html">Adopted from the GPU for the Web Community Group</a></p>
-              <p class="milestone"><b>Recommendation expected completion:</b> Q1 2022</p>
+              <p class="draft-status"><b>Draft State:</b> Working Draft</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2022/WD-WGSL-20220831/">31 August 2022</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2021/WD-WGSL-20210518/">WebGPU Shading Language 18 May 2021</a>;
+                <br/>associated <a href="https://www.w3.org/mid/cfe-8037-cd38c7697f2aa348acbe6b21de22a4ba3f55d0ea@w3.org">Call for Exclusion</a> on 2021-05-18 ended on 2021-10-15;
+                <br/>produced under Working Group charter: <a href="https://www.w3.org/2020/12/gpu-wg-charter.html">https://www.w3.org/2020/12/gpu-wg-charter.html</a></p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2024</p>
           </dd>
           </dl>
         </div>
@@ -240,16 +255,16 @@
 
       <section id="success-criteria">
         <h2>Success Criteria</h2>
-        <p>In order to advance to  <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations of each feature defined in the specification</a>.</p>
-        <p>Each specification should contain a section detailing any <a href='https://www.w3.org/TR/security-privacy-questionnaire/'>known security</a>, fingerprinting, and privacy implications, and suggested mitigation strategies for implementers, web authors, and end users. The group should not publish a specification if acceptable mitigation strategies cannot be found.</p>
-        <p>Each specification should contain a section describing known impacts on accessibility to users with disabilities, ways the specification features address them, and recommendations for minimizing accessibility problems in implementation.</p>
+        <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each feature defined in the specification.</p>
+        <p>Each specification should contain sections detailing all known security and privacy &mdash;including fingerprinting&mdash; implications, and suggested mitigation strategies for implementers, web authors, and end users. The group should not publish a specification if acceptable mitigation strategies cannot be found.</p>
+        <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and recommendations for maximising accessibility in implementations.</p>
         <p>Normative specification changes are generally expected to have a corresponding set of tests, either in the form of new tests or modifications to existing tests, or must include the rationale for why test updates are not required for the proposed update.</p>
       </section>
 
 
       <section id="coordination">
         <h2>Coordination</h2>
-        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>. The Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of each specification. The Working Group is advised to seek a review at least 3 months before first entering <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>. The Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of each specification. The Working Group is advised to seek a review at least 3 months before first entering <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
 
         <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
 
@@ -270,8 +285,8 @@
         <dt><a href="https://www.w3.org/wasm/">Web Assembly Working Group</a></dt>
         <dd>This Working Group develops a size- and load-time-efficient format and execution environment, allowing compilation to the web with consistent behavior across a variety of implementations.</dd>
 
-        <dt><a href="https://www.w3.org/community/webmachinelearning/">Machine Learning for the Web Community Group</a></dt>
-        <dd>This Community Group incubates a dedicated low-level Web API for machine learning inference.</dd>
+        <dt><a href="https://www.w3.org/groups/wg/webmachinelearning/">Web Machine Learning for the Web Working Group</a></dt>
+        <dd>This Working Group develops a dedicated low-level Web API for enabling efficient machine learning inference in the browser.</dd>
           </dl>
           <h3 id="external-coordination">External Organizations</h3>
           <dl>
@@ -290,7 +305,7 @@
           Participation
         </h2>
         <p>
-          To be successful, this Working Group is expected to have 5 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a day per week towards the Working Group. There is no minimum requirement for other Participants.
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
         </p>
         <p>
           The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
@@ -316,7 +331,7 @@
           Communication
         </h2>
         <p id="public">
-          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>. Meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on a public repository, and may permit direct public contribution requests.
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on public repositories and may permit direct public contribution requests. The meetings themselves are not open to public participation, however.
         </p>
         <p>
           Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/2020/gpu/">GPU for the Web Working Group home page.</a>
@@ -327,6 +342,9 @@
         <p>
           This group primarily conducts its technical work in its <a href="https://github.com/gpuweb">public repositories</a>. There is also a public mailing list <a id="public-name" href="mailto:public-gpu@w3.org">public-gpu@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-gpu/">archive</a>).  The public is invited to contribute to the github repositories and post messages to the list. Regular activity summaries around the github repositories will be provided.
         </p>
+        <p>
+          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+        </p>
       </section>
 
 
@@ -336,15 +354,19 @@
           Decision Policy
         </h2>
         <p>
-          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 3.3</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
         <p>
-           However, if a decision is necessary for timely progress, but consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote, and record a decision along with any objections.
+           However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
         </p>
         <p>
-          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional until 10 working days after the publication of the resolution in draft minutes sent, which will be published within 5 working days of the meeting to the working group's mailing list with a 'call for consensus' in the subject line. If no objections are raised on the mailing list by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from <span id='cfc'>10 working days</i></span>, depending on the chair's evaluation of the group consensus on the issue.
+
+          If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
         </p>
         <p>
-          All decisions made by the group should be considered resolved unless and until new information becomes available, or unless reopened at the discretion of the Chairs or the Director.
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
         </p>
         <p>
           This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/policies#Votes">W3C Process Document (Section 3.4, Votes)</a>, and includes no voting procedures beyond what the Process Document requires.
@@ -361,7 +383,7 @@
           This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent
             Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.
 
-          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/gpu/ipr">licensing information</a>.
         </p>
       </section>
 
@@ -375,7 +397,7 @@
           About this Charter
         </h2>
         <p>
-          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/groups#GAGeneral">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
         </p>
 
         <section id="history">
@@ -416,22 +438,32 @@
                 </td>
               </tr>
               <tr>
-                <th><a href="#">Rechartered</a></th>
+                <th><a href="https://www.w3.org/2020/12/gpu-wg-charter.html">Rechartered</a></th>
                 <td>15 December 2020</td>
                 <td>31 August 2022</td>
                 <td>New Patent Policy</td>
               </tr>
               <tr>
-                <th><a href="#">New co-chair</a></th>
+                <th><a href="https://www.w3.org/2020/12/gpu-wg-charter.html">New co-chair</a></th>
                 <td>07 April 2021</td>
                 <td>31 August 2022</td>
                 <td>Jeff Gilbert replaces Dean Jackson as co-chair</td>
               </tr>
               <tr>
-                <th><a href="#">Co-chair update</a></th>
+                <th><a href="https://www.w3.org/2020/12/gpu-wg-charter.html">Co-chair update</a></th>
                 <td>17 February 2022</td>
                 <td>31 August 2022</td>
                 <td>Reflect change of firstname for Kelsey Gilbert</td>
+              </tr>
+              <tr>
+                <th><a href="#">Rechartered</a></th>
+                <td><i class="todo">when approved</i></td>
+                <td>30 November 2024</td>
+                <td><ul>
+                  <li>Align text with charter template</li>
+                  <li>Refresh deliverables drafts info</li>
+                  <li>Replace Web Machine Learning Community Group with Working Group in coordination section</li>
+                </ul></td>
               </tr>
             </tbody>
           </table>
@@ -448,7 +480,7 @@
 
       <p class="copyright">
         <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
-        2020
+        2022
         <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
         (
         <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
