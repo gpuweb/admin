@@ -97,8 +97,9 @@
     <ol>
         <li>enables rendering of modern graphics to both onscreen and offscreen drawing surfaces</li>
         <li>enables computation tasks to be performed, and the results of such tasks to be retrieved</li>
-        <li>defines a Shading Language that describes the graphics and computation tasks in a format
-        that can be translated or compiled into platform-specific instructions</li>
+        <li>This group will also recommend a companion Shading Language that describes the graphics and
+            computation tasks in a format
+            that can be translated or compiled into platform-specific instructions</li>
     </ol>
 
     <p>
@@ -183,11 +184,12 @@
 
     <dd>An API as described above.</dd>
 
-    <dt>GPU for the Web Shading Language</dt>
+    <dt>WebGPU Shading Language</dt>
 
-    <dd>A Shading Language specification, probably based on an existing
-        language, that defines the programmable interface to the
-        GPU for the Web graphics and computation pipeline.</dd>
+    <dd>A Shading Language specification that defines the programmable
+        interface to the GPU for the Web graphics and computation
+        pipeline, and that can be translated or compiled into
+        platform-specific instructions.</dd>
     </dl>
     <h3 id="non-normative-reports">
       Non-Normative Reports
@@ -220,6 +222,15 @@
       The Community Group may develop a software library that implements the GPU for the
       Web work across multiple platforms using existing native APIs. For example, a
       C++ library that exposes GPU for the Web using Direct3D, Metal or Vulkan. Such software
+      will be developed using the <a href=
+      "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">
+      W3C Software and Document License</a>.
+    </p>
+    <p>
+      The Community Group will develop a continuous integration mechanism to validate the
+      grammar of WebGPU Shading Language against syntactic ambiguities and potential
+      mechanical issues with primary reliance on an industry-adopted tool that can report
+      ambiguity and generate playgrounds that can run on the Web. Such software
       will be developed using the <a href=
       "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">
       W3C Software and Document License</a>.
