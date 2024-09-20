@@ -86,6 +86,14 @@
 
       <section id="details">
         <table class="summary-table">
+          <tr id="Status">
+            <th>
+              Charter Status
+            </th>
+            <td>
+              See the <a href="https://www.w3.org/groups/wg/gpu/charters/">group status page</a> and <a href="#history">detailed change history</a>.
+            </td>
+          </tr>
           <tr id="Duration">
             <th>
               Start date
@@ -195,7 +203,7 @@
 
         <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/gpu/publications">group publication status page</a>.</p>
 
-        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to reach a stable state. The Working Group intends to publish the latest state of their work as Candidate Recommendation (with Snapshots) and does not intend to advance their documents to Recommendation.</p>
 
         <div id="normative">
           <h3>
@@ -212,7 +220,7 @@
               <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2021/WD-webgpu-20210518/">WebGPU 18 May 2021</a>;
                 <br/>associated <a href="https://www.w3.org/mid/cfe-8036-f5ffade17337af94e77d0c1e588bbe63549638fb@w3.org">Call for Exclusion</a> on 2021-05-18 ended on 2021-10-15;
                 <br/>produced under Working Group charter: <a href="https://www.w3.org/2020/12/gpu-wg-charter.html">https://www.w3.org/2020/12/gpu-wg-charter.html</a></p>
-              <p class="milestone"><b>Expected completion:</b> Q4 2024</p>
+              <p class="milestone"><b>Expected completion:</b> Q2 2025</p>
           </dd>
 
           <dt><a href="https://www.w3.org/TR/WGSL/">WebGPU Shading Language</a></dt>
@@ -227,7 +235,7 @@
               <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2021/WD-WGSL-20210518/">WebGPU Shading Language 18 May 2021</a>;
                 <br/>associated <a href="https://www.w3.org/mid/cfe-8037-cd38c7697f2aa348acbe6b21de22a4ba3f55d0ea@w3.org">Call for Exclusion</a> on 2021-05-18 ended on 2021-10-15;
                 <br/>produced under Working Group charter: <a href="https://www.w3.org/2020/12/gpu-wg-charter.html">https://www.w3.org/2020/12/gpu-wg-charter.html</a></p>
-              <p class="milestone"><b>Expected completion:</b> Q4 2024</p>
+              <p class="milestone"><b>Expected completion:</b> Q2 2025</p>
           </dd>
           </dl>
         </div>
@@ -237,7 +245,7 @@
               Other Deliverables
             </h3>
             <p>
-              This Working Group will produce conformance test suites and
+              This Working Group will produce <a href="https://github.com/gpuweb/cts">conformance test suites</a> and
               implementation reports for its normative deliverables.
             </p>
             <p>
@@ -254,18 +262,19 @@
 
       <section id="success-criteria">
         <h2>Success Criteria</h2>
-        <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each feature defined in the specification.</p>
+        <p>There should be testing plans for each specification, starting from the earliest drafts. Normative specification changes are generally expected to have a corresponding set of tests, either in the form of new tests or modifications to existing tests, or must include the rationale for why test updates are not required for the proposed update.</p>
         <p>Each specification should contain sections detailing all known security and privacy &mdash;including fingerprinting&mdash; implications, and suggested mitigation strategies for implementers, web authors, and end users. The group should not publish a specification if acceptable mitigation strategies cannot be found.</p>
         <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and recommendations for maximising accessibility in implementations.</p>
-        <p>Normative specification changes are generally expected to have a corresponding set of tests, either in the form of new tests or modifications to existing tests, or must include the rationale for why test updates are not required for the proposed update.</p>
+        <p>This Working Group expects to follow the TAG <a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.</p>
+        <p>All new features should have expressions of interest from at least two potential implementors before being incorporated in the specification.</p>
       </section>
 
 
       <section id="coordination">
         <h2>Coordination</h2>
-        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>. The Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of each specification. The Working Group is advised to seek a review at least 3 months before first entering <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for accessibility, internationalization, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/groups/other/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/policies/process/#RecsWD" title="First Public Working Draft">FPWD</a>. The Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of each specification. The Working Group is advised to seek a review at least 3 months before first entering <a href="https://www.w3.org/policies/process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
 
-        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/policies/process/#WGCharter">W3C Process Document</a>:</p>
 
         <div>
           <h3 id="w3c-coordination">W3C Groups</h3>
@@ -275,13 +284,13 @@
 
             <dt><a href="https://www.w3.org/immersive-web/">Immersive Web Working Group</a></dt>
             <dd>The Immersive Web Working Group produces specifications to interact with Virtual Reality (VR) and Augmented Reality (AR) devices and sensors, and may add a 3D rendering layer based on the WebGPU API.</dd>
-        <dt><a href="https://www.w3.org/2019/webapps/">Web Applications Working Group</a></dt>
+        <dt><a href="https://www.w3.org/groups/wg/webapps/">Web Applications Working Group</a></dt>
         <dd>The Web Applications Working Group (WebApps WG) produces specifications that facilitate the development of client-side web applications.</dd>
 
-        <dt><a href="https://www.w3.org/2011/webappsec/">Web Application Security Working Group</a></dt>
+        <dt><a href="https://www.w3.org/groups/wg/webappsec/">Web Application Security Working Group</a></dt>
         <dd>This Working Group develops security and policy mechanisms to improve the security of Web Applications, and enable secure cross-site communication.</dd>
 
-        <dt><a href="https://www.w3.org/wasm/">Web Assembly Working Group</a></dt>
+        <dt><a href="https://www.w3.org/groups/wg/wasm/">Web Assembly Working Group</a></dt>
         <dd>This Working Group develops a size- and load-time-efficient format and execution environment, allowing compilation to the web with consistent behavior across a variety of implementations.</dd>
 
         <dt><a href="https://www.w3.org/groups/wg/webmachinelearning/">Web Machine Learning Working Group</a></dt>
@@ -312,13 +321,13 @@
           The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
         </p>
         <p>
-          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
         </p>
         <p>
           Participants in the group are required
-          (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>)
+          (by the <a href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>)
           to follow the W3C
-          <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.
+          <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.
         </p>
         <p>
           As stated above, the majority of the technical work for this Working Group will take place in the <a href="https://www.w3.org/community/gpu/">GPU for the Web Community Group</a>.
@@ -332,7 +341,7 @@
           Communication
         </h2>
         <p id="public">
-          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on public repositories and may permit direct public contribution requests. The meetings themselves are not open to public participation, however.
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/policies/process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on public repositories and may permit direct public contribution requests. The meetings themselves are not open to public participation, however.
         </p>
         <p>
           Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/2020/gpu/">GPU for the Web Working Group home page.</a>
@@ -355,7 +364,7 @@
           Decision Policy
         </h2>
         <p>
-          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/policies/process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
         <p>
            However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
         </p>
@@ -367,10 +376,10 @@
           If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
         </p>
         <p>
-          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs.
         </p>
         <p>
-          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/policies#Votes">W3C Process Document (Section 3.4, Votes)</a>, and includes no voting procedures beyond what the Process Document requires.
+          This charter is written in accordance with the <a href="https://www.w3.org/policies/process/policies#Votes">W3C Process Document (Section 3.4, Votes)</a>, and includes no voting procedures beyond what the Process Document requires.
         </p>
       </section>
 
@@ -381,16 +390,15 @@
           Patent Policy
         </h2>
         <p>
-          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent
-            Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.
+          This Working Group operates under the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.
 
-          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/gpu/ipr">licensing information</a>.
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/gpu/ipr/">licensing information</a>.
         </p>
       </section>
 
       <section id="licensing">
         <h2>Licensing</h2>
-        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+        <p>This Working Group will use the <a href="https://www.w3.org/copyright/software-license/">W3C Software and Document license</a> for all its deliverables.</p>
       </section>
 
       <section id="about">
@@ -398,7 +406,7 @@
           About this Charter
         </h2>
         <p>
-          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+          This charter has been created according to <a href="https://www.w3.org/policies/process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/policies/process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
         </p>
 
         <section id="history">
@@ -406,7 +414,7 @@
             Charter History
           </h3>
 
-          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/policies/process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
 
           <table class="history">
             <tbody>
@@ -463,14 +471,24 @@
                 <td>None</td>
               </tr>
               <tr>
-                <th><a href="#">Rechartered</a></th>
-                <td><i class="todo">when approved</i></td>
+                <th><a href="https://www.w3.org/2022/11/gpuweb-charter.html">Rechartered</a></th>
+                <td>6 December 2022</td>
                 <td>30 November 2024</td>
                 <td><ul>
                   <li>Align text with charter template</li>
                   <li>Refresh deliverables drafts info</li>
                   <li>Replace Web Machine Learning Community Group with Working Group in coordination section</li>
                   <li>Add Unicode Technical Committee to coordination section</li>
+                </ul></td>
+              </tr>
+              <tr>
+                <th><a href="#">Rechartered</a></th>
+                <td><i class="todo">When approved</i></td>
+                <td>30 November 2026</td>
+                <td><ul>
+                  <li>Align text with charter template, refresh links</li>
+                  <li>Add link to Conformance Test Suite</li>
+                  <li>Switch to CR with Snapshots (no intent to advance to Recommendation) mode</li>
                 </ul></td>
               </tr>
             </tbody>
@@ -486,19 +504,11 @@
         <a href="mailto:fd@w3.org">François Daoust</a>
       </address>
 
-      <p class="copyright">
-        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
-        2022
-        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
-        (
-        <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
-        <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
-        <a href="https://www.keio.ac.jp/">Keio</a>,
-        <a href="https://ev.buaa.edu.cn/">Beihang</a>
-        ), All Rights Reserved.
-
-        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
-      </p>
+      <p class="copyright">Copyright © 2024 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+        <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+        <a href="https://www.w3.org/policies/#disclaimers">liability</a>,
+        <a href="https://www.w3.org/policies/#trademarks">trademark</a> and
+        <a rel="license" href="https://www.w3.org/copyright/software-license/" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
     </footer>
 
   </body>
