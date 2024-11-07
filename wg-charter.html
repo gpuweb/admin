@@ -52,6 +52,7 @@
     <header id="header">
       <aside>
         <ul id="navbar">
+          <li><a href="#background">Background</a></li>
           <li><a href="#scope">Scope</a></li>
           <li><a href="#deliverables">Deliverables</a></li>
           <li><a href="#success-criteria">Success criteria</a></li>
@@ -142,16 +143,27 @@
         </table>
       </section>
 
-
+      <section id="background" class="background">
+        <h2>Motivation and Background</h2>
+        <p>
+          In this document, the term <dfn>GPU</dfn> stands for Graphics Processing Unit, typically a piece of hardware dedicated to efficiently processing graphics and related features.
+        </p>
+        <p>
+          GPUs have become essential for drawing complex images efficiently, including for rendering virtual reality and augmented reality scenes in real-time as needed by the <a href="https://www.w3.org/TR/webxr/">WebXR Device API</a>. GPUs are also at the heart of computations that leverage parallelism, such as machine learning inference.
+        </p>
+        <p>
+          Web applications may leverage GPUs through the <a href="https://www.khronos.org/webgl/">WebGL</a> family of APIs, but WebGL does not enable access to more advanced features of GPUs, focuses on drawing images and does not provide first-class support for performing general computations, and is not agnostic of the GPU system API exposed by the underlying operating system.
+        </p>
+        <p>
+          The overall goal of the GPU for the Web Working Group is to provide a foundation that can be implemented on top of modern GPU system APIs to expose modern GPU functionality on the Web, both for computation and for image rendering.
+        </p>
+        <p>
+          See also the <a href="https://gpuweb.github.io/gpuweb/explainer/">WebGPU Explainer</a>, maintained by the GPU for the Web Community Group, for additional background, use cases, and design considerations.
+        </p>
+      </section>
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-        <p>
-            In this document, the term <dfn>GPU</dfn> stands for Graphics
-            Processing Unit, typically a piece of hardware dedicated to
-            efficiently processing graphics and related features.
-        </p>
-
         <p>
             This Working Group will recommend a Web programming interface for
             graphics and computation that:
@@ -480,6 +492,7 @@
                   <li>Add link to Conformance Test Suite</li>
                   <li>Switch to CR with Snapshots (no intent to advance to Recommendation) mode</li>
                   <li>Clarify that technical discussions on the deliverables are now driven by this Working Group</li>
+                  <li>Add a Motivation and Background section</li>
                 </ul></td>
               </tr>
             </tbody>
